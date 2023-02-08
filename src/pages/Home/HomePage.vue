@@ -1,5 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import LoadingOverlay from "@/shared/components/LoadingOverlay.vue";
+</script>
 
 <template>
-  <div class="text-xl">test</div>
+  <div>home</div>
+  <Transition>
+    <LoadingOverlay />
+  </Transition>
 </template>
