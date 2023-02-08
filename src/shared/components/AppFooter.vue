@@ -1,3 +1,3 @@
 <template>
-  <div>footer</div>
+  <div class="w-full bg-white">footer</div>
 </template>

@@ -17,7 +17,7 @@ onMounted(() => {
   <Transition>
     <div
       v-if="progressBarWidth < 100"
-      class="fixed top-0 flex h-screen w-screen items-center justify-center bg-black"
+      class="fixed top-0 z-10 flex h-screen w-screen items-center justify-center bg-black"
     >
       <div class="text-3xl text-white">
         <h1>Portfolio</h1>
