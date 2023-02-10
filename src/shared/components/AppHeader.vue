@@ -4,8 +4,8 @@ import { ref } from "vue";
 const isMenuOpen = ref(false);
 </script>
 <template>
-  <div class="list-none bg-black">
-    <div class="flex w-full items-center justify-between p-3 text-white">
+  <div class="list-none">
+    <div class="flex w-full items-center justify-between p-3">
       <h1 class="text-2xl font-semibold">N</h1>
       <span
         @click="isMenuOpen = !isMenuOpen"

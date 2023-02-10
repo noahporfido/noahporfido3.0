@@ -6,8 +6,8 @@ import AppFooter from "@/shared/components/AppFooter.vue";
 
 <template>
   <AppHeader />
-  <main class="h-screen">
+  <main class="my-0 mx-auto max-w-7xl px-36">
     <RouterView />
   </main>
-  <AppFooter />
+  <!-- <AppFooter /> -->
 </template>
