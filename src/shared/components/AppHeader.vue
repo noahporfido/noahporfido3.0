@@ -14,11 +14,11 @@ const isMenuOpen = ref(false);
       >
         menu
       </span>
-      <div class="hidden space-x-8 xl:flex">
-        <li>about</li>
-        <li>experience</li>
-        <li>projects</li>
-        <li>contact</li>
+      <div class="hidden space-x-6 xl:flex">
+        <li class="cursor-pointer px-1 py-2">about</li>
+        <li class="cursor-pointer px-1 py-2">experience</li>
+        <li class="cursor-pointer px-1 py-2">projects</li>
+        <li class="cursor-pointer px-1 py-2">contact</li>
       </div>
     </div>
     <div
