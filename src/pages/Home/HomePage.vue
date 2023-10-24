@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import SecondaryButton from "@/shared/components/button/SecondaryButton.vue";
 import BoxContainer from "@/shared/components/layout/BoxContainer.vue";
+const imgArray = [
+  "https://logo.clearbit.com/vuejs.org",
+  "https://logo.clearbit.com/https://tailwindcss.com/"
+];
 </script>
 
 <template>
-  <BoxContainer color-class="bg-gray-200">
+  <BoxContainer full-height color-class="bg-gray-200">
     <section>
       <p class="text-lg">Hi, my name is</p>
       <h1 class="mt-2 text-2xl font-bold tracking-wide lg:mt-6 lg:text-6xl">
@@ -27,7 +30,11 @@ import BoxContainer from "@/shared/components/layout/BoxContainer.vue";
       </p>
     </section>
   </BoxContainer>
-  <BoxContainer color-class="bg-white"></BoxContainer>
+  <BoxContainer padding="py-4" color-class="bg-white">
+    <Vue3Marquee clone>
+      <img v-for="img in imgArray" :key="img" :src="img" />
+    </Vue3Marquee>
+  </BoxContainer>
   <div class="grid grid-cols-2">
     <BoxContainer color-class="bg-gray-200"></BoxContainer>
     <BoxContainer color-class="bg-gray-200"></BoxContainer>
