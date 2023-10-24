@@ -1,13 +1,15 @@
 <script lang="ts" setup>
 import { RouterView } from "vue-router";
-import AppHeader from "@/shared/components/AppHeader.vue";
-import AppFooter from "@/shared/components/AppFooter.vue";
+import AppHeader from "@/shared/components/TheAppHeader.vue";
+import AppFooter from "@/shared/components/TheAppFooter.vue";
 </script>
 
 <template>
-  <AppHeader />
-  <main class="my-0 mx-auto max-w-7xl px-36">
-    <RouterView />
-  </main>
-  <!-- <AppFooter /> -->
+  <div class="border-2 border-black">
+    <AppHeader />
+    <main class="mx-auto">
+      <RouterView />
+    </main>
+    <AppFooter />
+  </div>
 </template>

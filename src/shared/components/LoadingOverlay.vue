@@ -17,13 +17,13 @@ onMounted(() => {
   <Transition>
     <div
       v-if="progressBarWidth < 100"
-      class="fixed top-0 z-10 flex h-screen w-screen items-center justify-center bg-black"
+      class="fixed top-0 z-10 flex h-screen w-screen items-center justify-center border-black bg-white"
     >
-      <div class="text-3xl text-white">
+      <div class="text-3xl">
         <h1>Portfolio</h1>
-        <div class="h-1 w-32 overflow-hidden rounded-full bg-blue-900">
+        <div class="h-1 overflow-hidden rounded-full bg-gray-500">
           <div
-            class="h-full bg-blue-500"
+            class="h-full bg-black"
             :style="{ width: `${progressBarWidth}%` }"
           ></div>
         </div>
