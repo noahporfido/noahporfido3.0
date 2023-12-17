@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full border-2 border-black p-4">
+  <div class="flex w-full p-4">
     <div class="space-y-2">
       <p>Noah Porfido</p>
       <p>Hopfenweg 44</p>

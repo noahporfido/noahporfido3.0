@@ -1,7 +1,11 @@
 <template>
   <div
-    class="border-2 border-black"
-    :class="[colorClass, padding ?? 'p-4', fullHeight ? 'h-screen' : 'h-auto']"
+    class="flex w-full flex-col items-center justify-center"
+    :class="[
+      colorClass,
+      padding ?? 'p-4',
+      fullHeight ? 'min-h-screen' : 'h-auto'
+    ]"
   >
     <slot />
   </div>
@@ -9,7 +13,7 @@
 
 <script setup lang="ts">
 interface Props {
-  colorClass: string;
+  colorClass?: string;
   padding?: string;
   fullHeight?: boolean;
 }

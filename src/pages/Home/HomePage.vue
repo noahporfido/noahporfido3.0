@@ -1,42 +1,28 @@
 <script setup lang="ts">
 import BoxContainer from "@/shared/components/layout/BoxContainer.vue";
-const imgArray = [
-  "https://logo.clearbit.com/vuejs.org",
-  "https://logo.clearbit.com/https://tailwindcss.com/"
-];
+import { Vue3Marquee } from "vue3-marquee";
+import vueLogoUrl from "@/assets/images/Vue.png";
+import tailwindLogoUrl from "@/assets/images/Tailwind.png";
+
+const imgArray = [tailwindLogoUrl, vueLogoUrl];
 </script>
 
 <template>
-  <BoxContainer full-height color-class="bg-gray-200">
-    <section>
-      <p class="text-lg">Hi, my name is</p>
-      <h1 class="mt-2 text-2xl font-bold tracking-wide lg:mt-6 lg:text-6xl">
-        Noah Porfido
-      </h1>
-      <h1
-        class="text-2xl font-bold tracking-wide opacity-60 lg:mt-2 lg:text-6xl"
-      >
-        I build stuff for the web
-      </h1>
-      <p class="mt-4">
-        I work at
-        <a
-          class="font-bold text-gray-800 hover:text-gray-600"
-          target="_blank"
-          href="https://menon.group"
-          >Menon Skills
-        </a>
-        to help people to be the version of themselves
+  <BoxContainer full-height>
+    <div class="space-y-2">
+      <h1 class="text-4xl font-bold lg:text-6xl">Noah Porfido</h1>
+      <p class="text-2xl lg:text-4xl">Web Developer</p>
+      <p>
+        I currently work at
+        <a class="cursor-pointer rounded-lg bg-gray-100 p-1 hover:bg-gray-200"
+          >Menon Skills AG</a
+        >
       </p>
-    </section>
+    </div>
   </BoxContainer>
-  <BoxContainer padding="py-4" color-class="bg-white">
+  <BoxContainer>
     <Vue3Marquee clone>
-      <img v-for="img in imgArray" :key="img" :src="img" />
+      <img class="h-20" v-for="img in imgArray" :key="img" :src="img" />
     </Vue3Marquee>
   </BoxContainer>
-  <div class="grid grid-cols-2">
-    <BoxContainer color-class="bg-gray-200"></BoxContainer>
-    <BoxContainer color-class="bg-gray-200"></BoxContainer>
-  </div>
 </template>
